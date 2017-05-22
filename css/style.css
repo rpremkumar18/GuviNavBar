@@ -1,0 +1,118 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	width: 100%;
+	background-color: #005151;
+	color: #fff;
+	font-family: sans-serif;
+}
+header{
+	height: 70px;
+	width: 100%;
+	background-color: #002020;
+}
+.logo{
+	height: 70px;
+	width: 40%;
+	float: left;
+}
+img{
+	height: 65px;
+	width: 150px;
+	padding: 2.5px;
+}
+
+nav{
+	height: 70px;
+	width: 60%;
+	float: right;
+}
+
+ul {
+	list-style: none;
+}
+ul li{
+float: left;
+width: 85px;
+padding: 0px 0px 0px 6px;
+text-align: center;
+position: relative;
+font-size: 14px;
+}
+ul li a{
+	text-decoration: none;
+	display: block;
+	line-height: 26px;
+}
+i {
+	padding: 0px 10px 5px 0px;
+	margin: 8px 0px;
+}
+.subMenu li{
+	display: none;
+	width: 200px;
+	background-color: #fff;
+	height: 25px;
+	text-align: left;
+}
+.subMenu li a{
+	color: black;
+	display: inline;
+}
+
+ul li:hover ul li{
+	position: relative;
+	display: block;
+	background-color: #fff;
+	color: black;
+}
+ul li:hover .mainMenu{
+	background-color: #fff;
+	color: black;
+}
+#warning{
+	width: 130px;
+	font-weight: bold;
+	font-size: 16px;
+	color: yellow;
+	transform-origin: left;
+	animation: animation 5s infinite;
+}
+@keyframes animation
+{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+#login{
+	margin-left: 50px;
+	width: 65px;
+}
+#login,#register{
+	border:none;
+	height: 70px;
+	background-color: green;
+	color: #fff;
+}
+
+#login:hover,#register:hover,#warning:hover{
+	background-color: #fff;
+	color: black;
+	animation: none;
+}
+
+#register{
+	margin-left: -5px;
+	width: 67px;
+	
+}
